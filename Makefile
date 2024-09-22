@@ -16,7 +16,7 @@ docker-down:
 	$(DOCKER_COMPOSE_CMD) -p bookstore_containers -f ./docker-compose.yaml down
 
 database-makemigrations:
-	$(DJANGO_MANAGE) makemigrations
+	$(DJANGO_MANAGE) makemigrations $(app)
 
 database-migrate:
 	$(DJANGO_MANAGE) migrate
