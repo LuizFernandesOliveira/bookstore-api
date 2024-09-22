@@ -24,7 +24,8 @@ make docker-up
 
 ### 4. Run the migrations
 ```bash
-make database-makemigrations database-migrate
+python3 manage.py makemigrations
+python3 manage.py migrate
 ```
 
 ### 5. Run server
